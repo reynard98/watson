@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  
+    .container {
+      width: 100%;
+      max-width: 375px;
+      padding: 20px;
+  
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        .icon {
+          background-color: yellow;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+  
+        .notification {
+          background-color: red;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          position: relative;
+  
+          &::after {
+            content: '';
+            background-color: white;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+  
+      .content {
+        .button-group {
+          display: flex;
+          justify-content: center;
+          margin: 20px 0;
+  
+          button {
+            background-color: grey;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            &.active {
+              background-color: white;
+              color: grey;
+            }
+          }
+        }
+  
+        .time-select {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          .time {
+            font-size: 24px;
+            margin: 10px 0;
+            position: relative;
+            &::before,
+            &::after {
+              content: '';
+              position: absolute;
+              height: 2px;
+              background-color: yellow;
+              width: 100%;
+            }
+            &::before {
+              top: -10px;
+            }
+            &::after {
+              bottom: -10px;
+            }
+          }
+        }
+  
+        .submit {
+          background-color: blue;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          margin-top: 20px;
+        }
+      }
+  
+      .footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+  
+        .icon {
+          width: 30px;
+          height: 30px;
+          &.home {
+            background: url('home-icon.png') no-repeat center;
+          }
+          &.add {
+            background: url('add-icon.png') no-repeat center;
+          }
+          &.stats {
+            background: url('stats-icon.png') no-repeat center;
+          }
+          &.clock {
+            background: url('clock-icon.png') no-repeat center;
+          }
+        }
+      }
+    }
+  }
+  

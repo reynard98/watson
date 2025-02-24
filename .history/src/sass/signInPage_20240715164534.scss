@@ -1,0 +1,12 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+body{  
+    background: asset.$bg_color;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "DIN 2014" , "Barlow";
+}
+

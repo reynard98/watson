@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title Dashboard
+    link(rel='stylesheet', href='statistic.css')
+  body
+    .container
+      .header
+        .notification
+          span.circle
+          span.bell
+      .target-completion
+        h2 TARGET COMPLETION
+        .date August 2025
+        .days
+          each day in ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+            .day
+              .amount 2.5L
+              .circle= day
+              .percentage #{day == 'S' ? '100%' : '60%'} // You can add dynamic data here
+        .message Great! Your completion rate is above 50%, let's keep this up
+      .consistency-rate
+        h3 CONSISTENCY RATE
+        .rate 67%
+        .average-rate AVERAGE RATE : 55%
+        .weekly
+          each week in ['1w', '2w', '3w', '4w']
+            .week
+              span= week
+              .progress
+      .watson-point
+        .point-label WATSON POINT
+        .point-value 25pt
+      .advice
+        .advice-item ARCHIVE
+        .advice-item HEALTH ADVICE
+        .advice-item HYDRATION ADVICE
+      .nav
+        .nav-item.home
+        .nav-item.plus
+        .nav-item.stats
+        .nav-item.call

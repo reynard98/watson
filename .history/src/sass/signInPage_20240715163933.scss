@@ -1,0 +1,14 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+
+form{
+    background: tomato;
+    display: flex;
+    flex-direction: column;
+
+
+    label{
+        background-color: skyblue;
+    }
+}

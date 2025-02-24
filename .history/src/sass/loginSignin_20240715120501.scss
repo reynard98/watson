@@ -1,0 +1,21 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+body{  
+    background: asset.$bg_color;
+    padding: 8rem 1.5rem;
+    font-family: "DIN 2014" , "Barlow";
+}
+
+.selection{
+    margin-top: 4.32rem;
+    .login{
+        @include mixin.buttonBig;
+    }
+    
+    .signin{
+        @include mixin.buttonBig_secondary;
+    }
+}
+
+

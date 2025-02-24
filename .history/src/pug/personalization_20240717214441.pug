@@ -1,0 +1,46 @@
+doctype html
+html(lang="ja")
+  head
+    include _head.pug
+    -var title = "personalization"
+    title #{title}
+    link(rel="stylesheet", href="css/signInPage.css")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet")
+
+  body
+    .container
+      .form-container
+        .header
+          h1 Create Account
+        form
+          .input-group
+            label(for="body weight") 
+            input(type="text" id="body weight" name="body weight" required placeholder="body weight")
+          .input-group
+            label(for="Climate and Environtment") 
+            select(id="Climate and Environment" name="sex" required)
+              option(value="" disabled selected) Select Your Living Environtment
+              option(value="Tropical Climate") Tropical Climate
+              option(value="Dry Climate") Dry Climate
+              option(value="Temperate Climate") Temperate Climate
+              option(value="Continental Climate") Continental Climate
+              option(value="Polar Climate") Polar Climate
+
+          .input-group
+            label(for="Activity Level") Activity Level  
+            select(id="sex" name="sex" required)
+              option(value="" disabled selected) Select Your Activity Level
+              option(value="") Tropical Climate
+              option(value="") Dry Clmate
+              option(value="") Temperate Climate
+              option(value="") Continental Climate
+              option(value="") Polar Climate
+
+          .input-group
+            label(for="password") Password
+            input(type="password" id="password" name="password" required)
+          button(type="submit") Submit
+
+        

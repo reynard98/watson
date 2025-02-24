@@ -1,0 +1,23 @@
+@use "asset" as asset;
+
+
+//button
+
+@mixin buttonBig{
+    padding: 1.375rem 0.625rem;
+    background: asset.$btn_color;
+    font-size: 1.5rem;
+    color: asset.$text_color_white;
+    text-decoration: none;
+}
+
+//language setting
+
+@mixin languageBox{
+    width: 7.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+}

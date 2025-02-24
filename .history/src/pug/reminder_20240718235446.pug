@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Reminder Page
+    link(rel="stylesheet" href="styles.css")
+  body
+    .container
+      .header
+        .icon
+        .notification
+      .content
+        .button-group
+          button#setReminder.active Set Reminder
+          button#setTarget Set Target
+        .time-select
+          .time 13:35
+          .time 14:55
+          .time 15:15
+        button.submit Submit
+      .footer
+        .icon.home
+        .icon.add
+        .icon.stats
+        .icon.clock
+    script(src="scripts.js")

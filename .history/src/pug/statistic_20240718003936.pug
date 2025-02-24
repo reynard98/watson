@@ -1,0 +1,47 @@
+doctype html
+html(lang="ja")
+  head
+    include _head.pug
+    -var title = "personalization"
+    title #{title}
+    link(rel="stylesheet", href="css/signInPage.css")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet")
+  body
+    .container
+      .header
+        .notification
+          span.circle
+          span.bell
+      .target-completion
+        h2 TARGET COMPLETION
+        .date August 2025
+        .days
+          each day in ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+            .day
+              .amount 2.5L
+              .circle= day
+              .percentage #{day == 'S' ? '100%' : '60%'} // You can add dynamic data here
+        .message Great! Your completion rate is above 50%, let's keep this up
+      .consistency-rate
+        h3 CONSISTENCY RATE
+        .rate 67%
+        .average-rate AVERAGE RATE : 55%
+        .weekly
+          each week in ['1w', '2w', '3w', '4w']
+            .week
+              span= week
+              .progress
+      .watson-point
+        .point-label WATSON POINT
+        .point-value 25pt
+      .advice
+        .advice-item ARCHIVE
+        .advice-item HEALTH ADVICE
+        .advice-item HYDRATION ADVICE
+      .nav
+        .nav-item.home
+        .nav-item.plus
+        .nav-item.stats
+        .nav-item.call

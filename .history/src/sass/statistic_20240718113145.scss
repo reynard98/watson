@@ -1,0 +1,16 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+body {
+    font-family: Arial, sans-serif;
+    background: asset.$bg_color;
+    color: asset.$text_color_white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 12rem 1.5rem;
+  }
+

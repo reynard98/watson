@@ -1,0 +1,36 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+body{
+    background: asset.$bg_color;
+    color: asset.$text_color_white;
+    padding: 14rem 1.5rem 9.9375rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "DIN 2014" , "Barlow";
+}
+
+.mainImg{
+    margin: 0 auto;
+    padding-bottom: 7.25rem;
+}
+
+.languageSelection{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+        .japan{
+            @include mixin.languageBox;
+        }
+
+        .english{
+            @include mixin.languageBox;
+        }
+}
+
+
+

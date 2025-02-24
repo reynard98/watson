@@ -1,0 +1,20 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+
+form{
+    background: tomato;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    width: 21.375rem;
+    height: 2.75rem;
+    padding: 0.625rem;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+
+    label{
+        background-color: skyblue;
+    }
+}

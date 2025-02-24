@@ -1,0 +1,23 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+
+form{
+    background: tomato;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    width: 21.375rem;
+    height: 2.75rem;
+    padding: 0.625rem;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 0.25rem;
+    border: 1px solid var(--foundation-white-normal-active, #CCC);
+    background: var(--Foundation-White-Normal, #FFF);
+
+    label{
+        background-color: skyblue;
+    }
+}

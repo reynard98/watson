@@ -1,0 +1,47 @@
+doctype html
+html(lang="ja")
+  head
+    include _head.pug
+    -var title = "personalization"
+    title #{title}
+    link(rel="stylesheet", href="css/signInPage.css")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet")
+
+  body
+    .container
+      .form-container
+        .header
+          h1 Create Account
+        form
+          .input-group
+            label(for="body weight") 
+            input(type="text" id="body weight" name="body weight" required placeholder="body weight")
+          .input-group
+            label(for="Climate and Environment") 
+            select(id="Climate and Environment" name="Climate and Environment" required)
+              option(value="" disabled selected) Select Your Living Environtment
+              option(value="Tropical Climate") Tropical Climate
+              option(value="Dry Climate") Dry Climate
+              option(value="Temperate Climate") Temperate Climate
+              option(value="Continental Climate") Continental Climate
+              option(value="Polar Climate") Polar Climate
+
+          .input-group
+            label(for="Activity Level") Activity Level  
+            select(id="Activity Level" name="Activity Level" required)
+              option(value="Activity Level" disabled selected) Select Your Activity Level
+              option(value="Activity Level") Sedentary Lifestyle
+              option(value="Activity Level") Moderately Active Lifestyle
+              option(value="Activity Level") Highly Active Lifestyle
+
+          .input-group
+            label(for="Pregnancy") Pregnancy
+            select(id="Pregnancy" name="Pregnancy" required)
+              option(value="Pregnancy" disabled selected) Select Your Activity Level
+              option(value="Pregnancy") Sedentary Lifestyle
+
+          button(type="submit") Submit
+
+        

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="ここに説明文を設定">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@twitteraccount">
+    <meta property="og:site_name" content="サイト名">
+    <meta property="og:title" content="サイトタイトル">
+    <meta property="og:description" content="サイト説明文">
+    <meta property="og:url" content="https://www.hogehoge.com">
+    <meta property="og:image" content="https://www.hogehoge.com./hoge.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="400">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
+    <title>personalization</title>
+    <link rel="stylesheet" href="css/signInPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="header">
+          <h1>Personalization</h1>
+        </div>
+        <form action="/nextPage" method="POST" id="personalizationForm">
+          <div class="input-group">
+            <label for="body-weight">Body Weight</label>
+            <input type="text" id="body-weight" name="body-weight" required placeholder="Body Weight">
+          </div>
+          <div class="input-group">
+            <label for="climate-and-environment">Climate and Environment</label>
+            <select id="climate-and-environment" name="climate-and-environment" required>
+              <option value="" disabled selected>Select Your Living Environment</option>
+              <option value="tropical-climate">Tropical Climate</option>
+              <option value="dry-climate">Dry Climate</option>
+              <option value="temperate-climate">Temperate Climate</option>
+              <option value="continental-climate">Continental Climate</option>
+              <option value="polar-climate">Polar Climate</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="activity-level">Activity Level</label>
+            <select id="activity-level" name="activity-level" required>
+              <option value="" disabled selected>Select Your Activity Level</option>
+              <option value="sedentary">Sedentary Lifestyle</option>
+              <option value="moderate">Moderately Active Lifestyle</option>
+              <option value="high">Highly Active Lifestyle</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="pregnancy">Pregnancy</label>
+            <select id="pregnancy" name="pregnancy" required>
+              <option value="" disabled selected>Are you pregnant?</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">By creating an account you agree to the <a href="#">terms of use</a>and our <a href="#">privacy policy</a></label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <script>
+        document.getElementById('personalizationForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+          // Redirect to another page
+          window.location.href = 'https://discreet-growth-270013.framer.app/';
+        });
+      </script>
+    </div>
+  </body>
+</html>

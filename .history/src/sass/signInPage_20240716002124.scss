@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 320px;
+  }
+  
+  .form-container {
+    text-align: center;
+  
+    .header {
+      margin-bottom: 20px;
+      
+      img {
+        width: 100px;
+        height: auto;
+      }
+  
+      h1 {
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  
+    form {
+      .input-group {
+        margin-bottom: 15px;
+  
+        label {
+          display: block;
+          margin-bottom: 5px;
+          color: #fff;
+          font-size: 14px;
+          text-align: left;
+        }
+  
+        input, select {
+          width: 100%;
+          padding: 8px;
+          border: none;
+          border-radius: 4px;
+          font-size: 14px;
+          box-sizing: border-box;
+          margin: 28px;
+        }
+  
+        .birthday-inputs {
+          display: flex;
+          justify-content: space-between;
+  
+          input {
+            width: 32%;
+          }
+        }
+  
+        select {
+          background-color: #fff;
+          color: #000;
+        }
+      }
+  
+      button {
+        background-color: ;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  

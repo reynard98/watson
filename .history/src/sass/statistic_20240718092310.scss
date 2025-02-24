@@ -1,0 +1,225 @@
+body {
+    background: #000;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    .circle {
+      width: 30px;
+      height: 30px;
+      background: yellow;
+      border-radius: 50%;
+    }
+  
+    .notification {
+      width: 20px;
+      height: 20px;
+      background: url('notification.png') no-repeat center;
+      position: relative;
+  
+      &::after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 10px;
+        height: 10px;
+        background: red;
+        border-radius: 50%;
+      }
+    }
+  }
+  
+  .target-completion {
+    margin-bottom: 20px;
+  
+    h2 {
+      margin-bottom: 10px;
+    }
+  
+    .date {
+      margin-bottom: 10px;
+    }
+  
+    .days {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+  
+      .day {
+        text-align: center;
+  
+        .amount {
+          margin-bottom: 5px;
+        }
+  
+        .circle {
+          width: 30px;
+          height: 30px;
+          background: blue;
+          color: white;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 5px;
+        }
+  
+        .percentage {
+          font-size: 12px;
+        }
+      }
+    }
+  
+    .message {
+      font-size: 12px;
+      color: yellow;
+    }
+  }
+  
+  .consistency-rate {
+    margin-bottom: 20px;
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+  
+    .consistency-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+  
+      h3 {
+        margin: 0;
+      }
+  
+      .rate {
+        font-size: 24px;
+      }
+  
+      .average-rate {
+        font-size: 14px;
+      }
+    }
+  
+    .weekly {
+      display: flex;
+      justify-content: space-around;
+  
+      .week {
+        text-align: center;
+  
+        span {
+          display: block;
+          margin-bottom: 5px;
+        }
+  
+        .progress-bar {
+          width: 50px;
+          height: 5px;
+          background: #555;
+          border-radius: 5px;
+          overflow: hidden;
+  
+          .progress {
+            width: 100%;
+            height: 100%;
+            background: yellow;
+          }
+        }
+      }
+    }
+  }
+  
+  .watson-point {
+    background: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  
+    .point-label {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  
+    .point-value {
+      font-size: 36px;
+    }
+  }
+  
+  .advice {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  
+    .advice-item {
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      width: 30%;
+  
+      &.blue {
+        background: #1a8cff;
+      }
+  
+      &.gray {
+        background: #b3b3b3;
+        color: #000;
+      }
+  
+      &.yellow {
+        background: #ffcc00;
+        color: #000;
+      }
+    }
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  
+    .nav-item {
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 50%;
+  
+      &.home {
+        background: #ff6347;
+      }
+  
+      &.plus {
+        background: #32cd32;
+      }
+  
+      &.stats {
+        background: #4682b4;
+      }
+  
+      &.call {
+        background: #d2691e;
+      }
+    }
+  }
+  

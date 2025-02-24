@@ -1,0 +1,28 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+body{  
+    background: asset.$bg_color;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "DIN 2014" , "Barlow";
+}
+
+img{
+    margin-top: 5rem;
+}
+
+.selection{
+    margin-top: 1rem;
+    .login{
+        @include mixin.buttonBig;
+    }
+    
+    .signin{
+        @include mixin.buttonBig_secondary;
+    }
+}
+
+

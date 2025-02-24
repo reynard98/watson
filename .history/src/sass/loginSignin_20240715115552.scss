@@ -1,0 +1,13 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+body{  
+    background: asset.$bg_color;
+    padding: 10rem 1.5rem;
+    font-family: "DIN 2014" , "Barlow";
+}
+
+login{
+    @include mixin.buttonBig;
+}
+

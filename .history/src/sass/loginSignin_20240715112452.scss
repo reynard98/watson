@@ -1,0 +1,7 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+body{  
+    background: asset.$bg_color;
+    
+}

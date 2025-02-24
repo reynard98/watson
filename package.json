@@ -1,0 +1,28 @@
+{
+  "name": "watson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "reynard",
+  "license": "ISC",
+  "browserslist": [
+    ">1.0% in JP",
+    "ie 11"
+  ],
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "pug": "^3.0.3"
+  },
+  "dependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.7"
+  }
+}

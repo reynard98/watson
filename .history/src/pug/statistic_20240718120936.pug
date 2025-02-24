@@ -1,0 +1,108 @@
+doctype html
+html(lang="ja")
+  head
+    include _head.pug
+    -var title = "statistic"
+    title #{title}
+    link(rel="stylesheet", href="css/statistic.css")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet")
+  body
+    
+    h1 TARGET COMPLETION
+    .resultWrap
+        h2 August 2025
+        .resultContainer
+            .data 
+                p 2.5L
+                h2 S
+                p 100%
+            .data 
+                p 2.5L
+                h2 M
+                p 100%
+
+            .data 
+                p 2.5L
+                h2 T
+                p 100%
+
+            .data 
+                p 2.5L
+                h2 W
+                p 100%
+
+            .data 
+                p 2.5L
+                h2 T
+                p 100%
+
+            .data 
+                p 2.5L
+                h2 F
+                p 100%
+
+
+            .data 
+                p 2.5L
+                h2 S
+                p 100%
+        
+        .message 
+            img(src="img/message_visual.png", alt="image of a star")
+            p Great! Your completion rate is above 50%, lets keep this up
+
+    .consistencyWrap
+        .consistencyRate 
+            h2 CONSISTENCY RATE 
+            p 67%
+            p Average Rate : 55%
+        
+        .consistencyDataBits 
+            h2 1w
+                .databitsWrap
+                    .dataBits 
+                    .dataBits 
+                    .dataBits 
+                    .dataBits 
+                    .dataBits 
+
+        .consistencyDataBits 
+            h2 2w
+                .databitsWrap
+                    .dataBits 
+                    .dataBits 
+                    .dataBits 
+                    .dataBits 
+                    .dataBits 
+
+        .consistencyDataBits 
+            h2 3w
+            .dataBits 
+            .dataBits 
+            .dataBits 
+            .dataBits 
+            .dataBits 
+
+        .consistencyDataBits 
+            h2 4w
+            .dataBits 
+            .dataBits 
+            .dataBits 
+            .dataBits 
+            .dataBits 
+
+    .watsonPointsWrap 
+        img(src="img/watsonPoints.png", alt="icon of watson W")
+        p 25
+            span.WatsonPoint_textEdit pt
+    
+    .selection 
+        .archive 
+            h2 archive 
+        .healthAdvice 
+            h2 health advice 
+        .hydration advice 
+            h2 hydration advice
+

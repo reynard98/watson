@@ -1,0 +1,60 @@
+doctype html
+html(lang="ja")
+  head
+    include _head.pug
+    -var title = "personalization"
+    title #{title}
+    link(rel="stylesheet", href="css/signInPage.css")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet")
+
+  body
+    .container
+      .form-container
+        .header
+          h1 Personalization
+        form(action="/nextPage" method="POST" id="personalizationForm")
+          .input-group
+            label(for="body-weight") Body Weight
+            input(type="text" id="body-weight" name="body-weight" required placeholder="Body Weight")
+          .input-group
+            label(for="climate-and-environment") Climate and Environment
+            select(id="climate-and-environment" name="climate-and-environment" required)
+              option(value="" disabled selected) Select Your Living Environment
+              option(value="tropical-climate") Tropical Climate
+              option(value="dry-climate") Dry Climate
+              option(value="temperate-climate") Temperate Climate
+              option(value="continental-climate") Continental Climate
+              option(value="polar-climate") Polar Climate
+          .input-group
+            label(for="activity-level") Activity Level
+            select(id="activity-level" name="activity-level" required)
+              option(value="" disabled selected) Select Your Activity Level
+              option(value="sedentary") Sedentary Lifestyle
+              option(value="moderate") Moderately Active Lifestyle
+              option(value="high") Highly Active Lifestyle
+          .input-group
+            label(for="pregnancy") Pregnancy
+            select(id="pregnancy" name="pregnancy" required)
+              option(value="" disabled selected) Are you pregnant?
+              option(value="yes") Yes
+              option(value="no") No
+          .checkbox-group
+            input(type='checkbox' id='terms' required)
+            label(for='terms')
+              | By creating an account you agree to the 
+              a(href='#') terms of use
+              | and our 
+              a(href='#') privacy policy
+          button(type="submit") Submit
+
+      script.
+        document.getElementById('personalizationForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+          // Redirect to another page
+          window.location.href = '/nextPage';
+        });
+
+
+        

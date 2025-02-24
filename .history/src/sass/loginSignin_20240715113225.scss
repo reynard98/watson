@@ -1,0 +1,8 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+body{  
+    background: asset.$bg_color;
+    margin: 10rem 1.5rem 9.9375rem 1.5rem;
+
+}

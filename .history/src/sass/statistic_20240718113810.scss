@@ -1,0 +1,25 @@
+@use "asset" as asset;
+@use "_mixin.scss" as mixin;
+
+body {
+    font-family: Arial, sans-serif;
+    background: asset.$bg_color;
+    color: asset.$text_color_white;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 5rem 1.5rem;
+    font-family: "DIN 2014" , "Barlow";
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .resultContainer{
+    display: flex;
+  }
+
